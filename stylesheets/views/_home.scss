@@ -1,0 +1,254 @@
+/*http://img.tecnologiapyme.com/2010/07/beach_laptop.jpg
+http://cdn.webadictos.co/media/2013/07/Laptop-on-Beach-800x523.jpg
+http://www.cssauthor.com/wp-content/uploads/2014/09/Free-Macbook-Air-hipster-Mockups1.jpg
+http://www.doddleinternet.com/
+#008D99
+*/
+html, body, {
+  height: 100%;
+}
+.container-fluid{
+  padding: 0;
+}
+.row{
+    margin-left: 0;
+        margin-right: 0;
+    }
+
+.header {
+  display: table;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /*background: url() no-repeat center center scroll;
+  background-size: cover;*/
+}
+
+hr {
+  border-top: 1.5px dashed #20B1E1;
+}
+
+/*menu*/
+.menudes {
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto 10px;
+  text-align:center;
+  z-index: 50;
+  background-color: rgba(153, 153, 153, 0.91);
+
+}
+
+.menudes a {
+  display: inline-block;
+  width: 20%; /* 100% dividido por el número de elementos */
+  box-sizing: border-box;
+  padding: 15px 5px;
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+  position:relative;
+  z-index:2;
+  font-family: Merienda;
+  font-size: 20px;
+}
+.menu_bar {
+  display:none;
+}
+
+@media screen and (max-width: 700px) {
+  .menu_bar {
+    display:block;
+    width:100%;
+    position: fixed;
+    top:0;
+    background-color:rgba(153, 153, 153, 0.91);
+    z-index: 1000;
+  }
+  .menu_bar .bt-menu {
+    display: block;
+    padding: 10px;
+    color: black;
+    overflow: hidden;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: left;
+  }
+  .barra-de-navegacion nav{
+    width: 100%;
+    position: fixed;
+    right: 100%;
+    margin: 0;
+    z-index: 300;
+    height: calc(150% - 100px);
+    display: block;
+  }
+  .barra-de-navegacion nav a  {
+    display: block;
+    border-bottom:3px dashed rgba(255,255,255,.5);
+    padding: 10%;
+    text-align: center;
+    font-size: 30px;
+    width: 100%;
+    top: 80px;
+  }
+   nav.menudes {
+   text-align: center;
+   width: 100%;
+   background: rgb(224, 129, 177);
+   }
+   .texto{
+    text-align: center;
+    margin: 20% 0;
+    font-family: Merienda;
+    color: #20b1df;
+   }
+}
+
+.marca {
+   position: absolute;
+   width: 19%;
+   height: 59px;
+   box-sizing: border-box;
+   bottom: 0;
+   left: -30%;
+   border: 3px solid #1ABECC;
+   transition: 0.5s ease-in-out;
+   z-index:1;
+} 
+
+ .menudes a:hover{
+  color: white;
+}
+ .menudes a:hover ~ .marca {
+   margin-left: -1px;
+}
+ .menudes a:nth-child(1):hover ~ .marca {
+  left: 10%; 
+}
+ .menudes a:nth-child(2):hover ~ .marca {
+  left: 30%; /* 1/5 del ancho total */
+}
+ .menudes a:nth-child(3):hover ~ .marca {
+  left: 50%; /* 2/5 del ancho total */
+}
+ .menudes a:nth-child(4):hover ~ .marca {
+  left: 72%; /* 3/5 del ancho total */
+}
+ .menudes a:nth-child(5):hover ~ .marca {
+  left: 25%; /* 4/5 del ancho total */
+}
+
+.texto{
+  text-align: center;
+  margin: 7% 0;
+  font-family: Merienda;
+  color: rgb(32, 177, 223);
+}
+.demi{
+   p{
+       padding: 5% 10%;
+       margin: 0;
+       text-align: justify;
+       line-height: 2;
+       font-size: 18px;
+       font-family: Merienda;
+       color: rgb(47, 59, 61);
+       font-weight: 500;
+   }
+}
+.col-md-3 {
+  padding: 5%;
+}
+.habilidades{
+  text-align: center;
+  padding: 5% 15px 10%;
+  h1{
+    font-family: Merienda;
+    color: rgb(32, 177, 223);
+    font-size: 35px;
+    margin: 4%;  }
+}
+.habilidades{
+  img{
+    width: 100%;
+  }
+  .css{
+    height: 177px;
+  }
+}
+
+.imagen {
+color: transparent; font-size: 50px;
+font-family: Merienda;
+text-transform: uppercase;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-ms-transition: all 0.5s ease;
+transition: all 0.5s ease;
+}
+.imagen:hover {
+line-height: 133px;
+color: rgba(241, 16, 100, 1);
+}
+.imagen img{
+ float: left;
+ margin: 0 15px 5%;
+ padding: 4%;
+}
+.imagen {
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+ 
+.imagen:hover {
+  -webkit-filter: grayscale(100%);
+}
+.imagen {
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+ 
+.imagen:hover {
+  -webkit-transform: rotate(-10deg);
+     -moz-transform: rotate(-10deg);
+       -o-transform: rotate(-10deg);
+      -ms-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+}
+
+
+
+.contac{
+  text-align: center;
+  img {
+  width: 5%;
+  }
+  h6{
+    font-family: Merienda;
+    font-size: 16px;
+  }
+}
+
+/*.foter {
+background-color: rgb(201, 201, 201);
+}
+
+
+.flecha {
+text-align: center;
+   .arriba{
+   border: 2px solid white;
+   border-radius: 50%;
+   position: relative;
+   top: -30px;
+   }
+}*/
