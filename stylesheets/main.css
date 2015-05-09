@@ -5706,7 +5706,8 @@ hr {
     margin: 0;
     z-index: 300;
     height: calc(150% - 100px);
-    display: block; }
+    display: block;
+    overflow: scroll; }
 
   .barra-de-navegacion nav a {
     display: block;
@@ -5778,6 +5779,9 @@ hr {
   font-family: Merienda;
   color: #2f3b3d;
   font-weight: 500; }
+
+.responsive {
+  width: 100%; }
 
 .col-md-3 {
   padding: 5%; }

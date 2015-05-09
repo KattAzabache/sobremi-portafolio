@@ -88,6 +88,7 @@ hr {
     z-index: 300;
     height: calc(150% - 100px);
     display: block;
+    overflow: scroll;
   }
   .barra-de-navegacion nav a  {
     display: block;
@@ -162,6 +163,9 @@ hr {
        color: rgb(47, 59, 61);
        font-weight: 500;
    }
+}
+.responsive{
+  width:100%;
 }
 .col-md-3 {
   padding: 5%;
